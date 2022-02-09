@@ -51,22 +51,6 @@ public class DetailActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.main_menu, menu);
-        MenuItem profile = menu.findItem(R.id.profile);
-        profile.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem menuItem) {
-                Intent intent = new Intent(DetailActivity.this, ProfileActivity.class);
-                startActivity(intent);
-                return false;
-            }
-        });
-        return super.onCreateOptionsMenu(menu);
-    }
 }
 
 
