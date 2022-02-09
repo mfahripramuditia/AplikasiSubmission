@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="15dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/kabupaten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kabupaten"
+                android:textStyle="bold"
+                android:padding="16dp"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:id="@+id/detiallengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="detailkabupaten"
+                android:textSize="17dp"/>
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
