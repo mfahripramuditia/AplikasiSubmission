@@ -22,14 +22,12 @@ public class DetailActivity extends AppCompatActivity {
 
     ImageView photo;
     TextView kabupaten, detaillengkap;
-    Button like;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-
-
+        
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowCustomEnabled(true);
