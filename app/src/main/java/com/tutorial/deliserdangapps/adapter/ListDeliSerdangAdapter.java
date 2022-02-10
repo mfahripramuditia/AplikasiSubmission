@@ -82,7 +82,7 @@ public class ListDeliSerdangAdapter extends RecyclerView.Adapter<ListDeliSerdang
         holder.like.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context.getApplicationContext(), "Anda Menyukai Halaman ini", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context.getApplicationContext(), "Menyukai Halaman ini", Toast.LENGTH_SHORT).show();
             }
         });
 
