@@ -41,6 +41,13 @@
                 android:ellipsize="end"
                 android:text="@string/provinsi"
                 android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/like"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/ic_baseline_thumb_up_24"/>
         </LinearLayout>
     </LinearLayout>
 
