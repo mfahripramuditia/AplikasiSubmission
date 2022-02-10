@@ -6,8 +6,10 @@ import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -37,6 +39,7 @@ public class ListDeliSerdangAdapter extends RecyclerView.Adapter<ListDeliSerdang
         CardView cardView;
         ImageView photo;
         TextView kabupaten, provinsi;
+        Button like;
 
         public ListViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -45,6 +48,7 @@ public class ListDeliSerdangAdapter extends RecyclerView.Adapter<ListDeliSerdang
             photo = (ImageView) itemView.findViewById(R.id.photo);
             kabupaten = (TextView) itemView.findViewById(R.id.kabupaten);
             provinsi = (TextView) itemView.findViewById(R.id.provinsi);
+            like = (Button) itemView.findViewById(R.id.like);
 
 
         }
@@ -75,6 +79,12 @@ public class ListDeliSerdangAdapter extends RecyclerView.Adapter<ListDeliSerdang
             }
         });
         Glide.with(context.getApplicationContext()).load(modelDeliSerdangList.get(position).getPhoto()).into((holder.photo));
+        holder.like.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(context.getApplicationContext(), "Anda Menyukai Halaman ini", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 
